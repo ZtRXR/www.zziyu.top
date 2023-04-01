@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <title>曾子愚</title>
 </head>
 <body>
     <script>
-
+$('#changeTitleBtn').on('click', function() {
+      $.get('/title', {title: '新的标题'}, function(data) {
+        document.title = data.title;
+      });
+    });
     </script>
 </body>
 </html>
