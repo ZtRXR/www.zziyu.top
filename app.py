@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-print("由Zengtudor开发")
+print("由 Zengtudor 开发")
 
 
 @app.route('/')
